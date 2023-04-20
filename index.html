@@ -5,12 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inconsolata" />
     <title>Home</title>
 </head>
 <body>
     <script src="scripts.js"></script>
     <div class="headerbar">
-        <button onclick = "settingsClick()"><img src="assets/settings.svg"></button>
+        <div class="settings">
+            <button class = "headerbutton" onclick = "settingsClick()"><img src="assets/settings.svg"></button>
+            <div class="dropmenu">
+                    <form>
+                        <label for="username">Update your name:</label>
+                        <input type="text" name="username"><br>
+                        <label for="fontselect">Font:</label>
+                        <select name="fontselect">
+                            <option value="inconsolata-nerd">Inconsolata</option>
+                            <option value="jetbrains-mono">JetBrains Mono</option>
+                        </select><br>
+                        <label for="theme"> Choose theme:</label>
+                        <select name="theme">
+                            <option value="light1">Light 1</option>
+                            <option value="dark1">Dark 1</option>
+                        </select><br>
+                        <button onclick = "saveSettingClick()" class="savesettings">Save</button>
+                    </form>
+            </div>
+        </div>
     </div>
     <p>Welcome</p>
     

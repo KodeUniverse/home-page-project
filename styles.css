@@ -3,11 +3,12 @@
     flex-direction: row;
 }
 
-body {
+body , h1{
+    font-family: Inconsolata;
     background-image: none;
 }
 
-button {
+.headerbutton {
     cursor: pointer;
     border:none; 
     background-color: transparent;
